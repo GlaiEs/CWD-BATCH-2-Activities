@@ -1,0 +1,19 @@
+
+body {
+    background-image: url("https://assets.pokemon.com//assets/cms2/img/misc/virtual-backgrounds/masters/forest-th.jpg");
+    background-color: #cccccc;
+   }
+
+.toast {
+    background-color: rgb(16, 25, 114);
+    
+}
+
+.loader {
+    position: absolute;
+    top: 40%;
+    left: 47%;
+    
+
+}
+

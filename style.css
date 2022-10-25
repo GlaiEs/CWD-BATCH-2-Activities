@@ -1,0 +1,18 @@
+h1, h2, h3, h4, p {
+    color: pink;
+}
+
+
+body {
+    background: grey;
+}
+
+button {
+    width: 200px;
+    padding: 10px;
+    background: pink;
+    border: none;
+    color: white;
+    border-radius: 5%
+    cursor: pointer;
+}

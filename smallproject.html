@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
+  <!-- Material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <title>Small Project</title>
+</head>
+<body class="grey darken-4">
+    <nav class="red accent-4">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="Project.html" class="brand-logo">Pokemon Fun Page</a>
+                <a href="#" data-target="slide-out" class="sidenav-trigger right">
+                  <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                  <li class="active">
+                    <a href="index.html" >Home</a>
+                  </li>
+                  <li>
+                    <a href="#">Trainers</a>
+                  </li>
+                  <li>
+                    <a href="#">Pokedex</a>
+                  </li>
+                  <li>
+                    <a href="#">Gyms</a>
+                  </li>
+                  <li>
+                    <a href="#">Announcements</a>
+                  </li>
+                </ul>    
+            </div>
+        </div>
+    </nav>
+
+    <ul id="slide-out" class="sidenav">
+      <li>
+        <div class="user-view">
+            <div class="background">
+               <img src="https://assets.pokemon.com//assets/cms2/img/misc/virtual-backgrounds/masters/coast.jpg">
+            </div>
+            <a href="#user"><img class="circle" src="https://i.pinimg.com/originals/18/d9/e1/18d9e1307018dbc76750ca7d5124fccd.png"></a>
+            <a href="#name"><span class="black-text name">Ash Ketchum</span></a>
+            <a href="#email"><span class="black-text email">ashketchumthetrainer@pokemon.com</span></a>
+        </div>
+      </li>
+      <li>
+        <a href="#!">
+            <i class="material-icons">cloud</i>First Link With Waves</a>
+      </li>
+      <li>
+        <a href="#!">Second Link</a>
+      </li>
+      <li><div class="divider"></div>
+      </li>
+      <li>
+        <a class="subheader">Subheader</a>
+      </li>
+      <li>
+        <a class="waves-effect" href="#!">Third Link With Waves</a>
+      </li>    
+    </ul>
+
+
+    <!-- Section: Stats -->
+ 
+    <section class="section section-stats center">
+        <div class="row">
+          <div class="col s12 m6 l3">
+            <div class="card-panel amber lighten-1 white-text center">
+              <i class="material-icons">business_center</i>
+              <h5>Monthly Visitors</h5>
+              <h3 class="count">3851</h3>
+              <div class="progress">
+                <div class="determinate yellow darken-4" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l3">
+            <div class="card-panel amber darken-2 white-text center">
+              <i class="material-icons">business</i>
+              <h5>Connections</h5>
+              <h3 class="count">160</h3>
+              <div class="progress">
+                <div class="determinate yellow lighten-2" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l3">
+            <div class="card-panel amber lighten-1 white-text center">
+              <i class="material-icons">contacts</i>
+              <h5>Users</h5>
+              <h3 class="count">1346</h3>
+              <div class="progress">
+                <div class="determinate yellow darken-4" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l3">
+            <div class="card-panel amber darken-2 white-text center">
+              <i class="material-icons">dashboard</i>
+              <h5>Posts</h5>
+              <h3 class="count">157</h3>
+              <div class="progress">
+                <div class="determinate yellow lighten-2" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+  
+      <!-- Section: Visitors -->
+  
+      <section class="section section-visitors #CC0000">
+        <div class="row">
+          <div class="col s12 m6 l8">
+            <div id="chartContainer" style="height: 300px; width: 100%">
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <!-- Latest comments-->
+            <ul class="collection with-header latest comments">
+              <li class="collection-header">
+                <h5>Latest Comments</h5>
+              </li>
+              <li class="collection-item avatar">
+                <img src="https://i.pinimg.com/originals/66/e3/d7/66e3d79f632ee277175cd3631dfd62c9.jpg" alt="" class="circle">
+                <span class="title">John Doe</span>
+                <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime iusto dolorem, modi pariatur quaerat natus perspiciatis rem harum excepturi praesentium?</p>
+                <a onclick="M.toast({html: 'Comment Approved'})" class="approve green-text">Approve</a> |
+                <a onclick="M.toast({html: 'Comment Denied'})" class="deny red-text">Deny</a>
+              </li>
+              <li class="collection-item avatar">
+                <img src="https://i.pinimg.com/736x/8e/2e/38/8e2e38366323af20ca882d6630e3fe0e.jpg" alt="" class="circle">
+                <span class="title">Jane Doe</span>
+                <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime iusto dolorem, modi pariatur quaerat natus perspiciatis rem harum excepturi praesentium?</p>
+                <a onclick="M.toast({html: 'Comment Approved', 
+                outDuration: 1000})" class="approve green-text">Approve</a> |
+                <a onclick="M.toast({html: 'Comment Denied'})" class="deny red-text">Deny</a>
+            </ul>
+          </div>
+        </div>  
+      </section> 
+
+<!-- preloaders -->
+
+    <div class="preloader-wrapper big active loader">
+        <div class="spinner-layer spinner-blue">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div><div class="gap-patch">
+                <div class="circle"></div>
+            </div><div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+
+        <div class="spinner-layer spinner-blue">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div><div class="gap-patch">
+                <div class="circle"></div>
+            </div><div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+
+        <div class="spinner-layer spinner-blue">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div><div class="gap-patch">
+                <div class="circle"></div>
+            </div><div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section: Rescent Posts & Todos -->
+
+    <section class="section section-recent">
+        <div class="row">
+            <div class="col s12 m6 l8">
+                <div class="card">
+                    <div class="card-content green white-text">
+                        <span class="card-title">Recent Posts</span>
+                        <table class="highlight">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Category</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Post One</td>
+                                    <td>Creative Web Design</td>
+                                    <td>
+                                        <a href="details.html" class="btn grey darken-3">Details</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Post Two</td>
+                                    <td>Web Development</td>
+                                    <td>
+                                        <a href="details.html" class="btn grey darken-3">Details</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Post Three</td>
+                                    <td>Mobile Development</td>
+                                    <td>
+                                        <a href="details.html" class="btn grey darken-3">Details</a>
+                                    </td>    
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Todos -->
+
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-content grey lighten-4">
+                        <span class="card-title">Quick Todos</span>
+                        <form id="todo-form">
+                            <div class="input-field">
+                                <input type="text" id="todo" placeholder="Add Todo...">
+                            </div>
+                        </form>
+                        <ul class="collection todos">
+                            <li class="collection-item">
+                                <div>Todo One
+                                    <a href="#!" class="secondary-content delete">
+                                        <i class="material-icons">close</i>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div>Todo two
+                                    <a href="#!" class="secondary-content delete">
+                                        <i class="material-icons">close</i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+         </div>           
+    </section>
+
+    <!-- Floating action button -->
+
+    <div class="fixed-action-btn toolbar">
+        <a class="btn-floating btn-large brown">
+            <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul>
+            <li>
+                <a href="#post-modal" class="indigo modal-trigger">
+                    <i class="material-icons">insert_chart</i>
+                </a>
+            </li>
+            <li>
+                <a class="cyan">
+                    <i class="material-icons">format_quote</i>
+                </a>
+            </li>
+            <li>
+                <a class="light-green">
+                    <i class="material-icons">publish</i>
+                </a>
+            </li>
+            <li>
+                <a class="deep-orange">
+                    <i class="material-icons">attach_file</i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- Post Modal -->
+    <div id="post-modal" class="modal">
+        <div class="modal-content">
+            <h4>Add Post</h4>
+            <form>
+                <div class="input-field">
+                    <input type="text" id="title">
+                    <label for="title">Title</label>
+                </div>
+                <div class="input-field">
+                    <select>
+                        <option value="" disabled selected>Select option</option>
+                        <option value="1" disabled selected>Creative Web Design</option>
+                        <option value="2" disabled selected>Web Development</option>
+                        <option value="3" disabled selected>Mobile Development</option>
+                    </select>
+                    <label for="">Category</label>
+                </div>
+                <div class="input-field">
+                    <textarea class="materialize-textarea"></textarea>
+                </div>
+                <div class="input-field">
+                  <input type="text" class="datepicker">
+                  <label for="title">Date</label>
+              </div>
+            </form>
+            <div class="modal-footer">
+                <a href="#" class="modal-action modal-close btn lime white-text">Submit</a>
+            </div>
+        </div> 
+    </div>
+
+    
+
+    
+
+
+      <footer class="section red accent-4 white-text center">
+        Designed by GSE & Powered by VSC     
+      </footer>
+
+
+
+
+
+  
+  
+
+  <!-- Jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+
+  <script src="chartmostviewedpokemon.js"></script>
+
+  
+
+  
+
+
+  <script>
+    //Hide Section
+    $('.section').hide();
+
+   setTimeout(function() {
+    $(document).ready(function(){
+        // Sidenav
+     $('.sidenav').sidenav({
+      edge: 'right',
+      inDuration: 1000,
+      outDuration: 1000
+     });
+     // Show section
+     $('.section').fadeIn ();
+     // Hide preloader
+     $('.loader').fadeOut();
+     // Init Modal
+     $('.modal').modal();
+     // Init Select
+     $('select').formSelect();
+
+     // Floating action button
+     $('.fixed-action-btn').floatingActionButton({
+        toolbarEnabled: true
+     });
+
+     // Quick Todos 
+     $('#todo-form').submit(function (e) {
+        const output = `
+            <li class="collection-item">
+              <div>${$('#todo').val()}
+                <a href="#!" class="secondary-content delete">
+                    <i class="material-icons">close</i>
+                 </a>
+              </div>
+            </li>       
+
+        `;
+         console.log($('#todo').val());
+         $('.todos').append(output);
+
+
+        e.preventDefault();
+     });
+
+     // Delete Todos
+     $('.todos').on('click', '.delete', function() {
+      $(this).parent().parent().remove();
+
+      //  console.log(test)
+     });
+
+     // Datepicker
+     $(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
+         
+
+     // Counter
+     $('.count').each(function () {
+        $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 100000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+     });
+     });
+     }, 1000);
+
+  </script>
+</body>
+</html>

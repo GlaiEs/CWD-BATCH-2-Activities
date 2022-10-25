@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Local css-->
+     <link rel="stylesheet" href="style.css">
+     <!-- Compiled and minified CSS-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+     <!-- Font Awesome-->
+     <script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
+     <!-- Material Icons-->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">   
+
+    <title>Grid System</title>
+</head>
+<body class="white">
+
+
+    <!--Navigation-->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper deep black" style="width: 100%; margin-bottom: 100%;" >
+                <div class="container">
+                  <ul id="nav-mobile">
+                    <li class="">
+                        <a href="" class="col l6" ><img src="data:image/png;base64,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" alt="" class="" style="height: 35px; width: 35px;"><span style="font-size: 45px; font-weight: bolder;"></span></a>
+                </div>
+            </div>
+          </nav>
+    </div>
+
+    <!--Grid-->
+    <div class="container">
+      <h1 class="black-text">Grid</h1>
+    <div class="row grey-text text-lighten-3">
+      <div class="col s1">
+        <div class="box red">
+          <i class="material-icons">filter_vintage</i>
+        </div>
+      </div>
+      <div class="col s1">
+        <div class="box orange">
+          <i class="material-icons">filter_vintage</i>
+        </div>
+      </div>
+      <div class="col s1">
+        <div class="box yellow">
+          <i class="material-icons">filter_vintage</i>
+        </div>
+      </div>
+      <div class="col s1">
+        <div class="box green">
+          <i class="material-icons">filter_vintage</i>
+        </div>
+      </div>
+      <div class="col s1">
+        <div class="box purple">
+          <i class="material-icons">filter_vintage</i>
+        </div>
+      </div>
+      <div class="col s1">
+        <div class="box blue">
+          <i class="material-icons">filter_vintage</i>
+        </div>
+      </div>
+      <div class="col s1">
+        <div class="box pink">
+          <i class="material-icons">filter_vintage</i>
+        </div>
+      </div>
+      <div class="col s1">
+        <div class="box red">
+          <i class="material-icons">filter_vintage</i>
+        </div>
+      </div>
+      <div class="col s1">
+        <div class="box orange">
+          <i class="material-icons">filter_vintage</i>
+        </div>
+      </div>
+      <div class="col s1">
+        <div class="box yellow">
+          <i class="material-icons">filter_vintage</i>
+        </div>
+      </div>
+      <div class="col s1">
+        <div class="box green">
+          <i class="material-icons">filter_vintage</i>
+        </div>
+      </div>
+      <div class="col s1">
+        <div class="box purple">
+          <i class="material-icons">filter_vintage</i>
+        </div>
+      </div>
+    </div>
+    <!--End Of Box Grid-->
+
+    <div class="row">
+      <div class="col s12">
+        <div class="box blue">
+          <p>This div is 12-columns wide on all screen sizes.</p>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="box pink">
+          <p>This div is 12-columns wide on all screen sizes.</p>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="box purple">
+          <p>This div is 12-columns wide on all screen sizes.</p>
+        </div>
+      </div>
+
+      <!--Offset-->
+      <div class="row">
+        <div class="col s12">
+          <div class="box green">
+            <span class="flow-text">This div is 12-columns wide on all screen sizes.</span>
+          </div>
+        </div>
+        <div class="col s6 offset-s3">
+          <div class="box yellow">
+            <span class="flow-text">This div is 12-columns wide on all screen sizes.</span>
+          </div>
+        </div>
+      </div>
+    
+      <!--End Of Offset-->
+      <div class="row">
+        <div class="col s7 push-s5">
+          <div class="box orange">
+            <span class="flow-text">This div is 12-columns wide on all screen sizes.</span>
+          </div>
+        </div>
+        <div class="col s5 pull-s7">
+          <div class="box red">
+            <span class="flow-text">This div is 12-columns wide on all screen sizes.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Promotion Table-->
+    <section class="section center">
+      <div class="row">
+        <div class="col s4">
+          <div class="card-panel">
+            <i class="material-icons large">beach_access</i>
+            <h5>
+              Beach Access
+            </h5>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod odio reiciendis iusto eius nisi odit quam quia consectetur laborum saepe!</p>
+          </div>
+        </div>
+        <div class="col s4">
+          <div class="card-panel">
+            <i class="material-icons large">brightness_5</i>
+            <h5>
+              Brightness
+            </h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque exercitationem facilis iure odit explicabo commodi nisi illum nobis reiciendis modi?</p>
+          </div>
+        </div>
+        <div class="col s4">
+          <div class="card-panel">
+            <i class="material-icons large">directions_boat</i>
+            <h5>
+              Boat Direction
+            </h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eveniet quae porro explicabo neque iure fugiat dolorem non dolorum alias.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    <!-- Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified Javascript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+    
+   
+
+
+</body>
+</html>
